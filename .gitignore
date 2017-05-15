@@ -285,7 +285,7 @@ node_modules/
 dist/
 package/
 
-*.js
+#*.js
 !tests/hooks/**/*.*
 !gruntfile.js
 !js-libs/**/*.*
