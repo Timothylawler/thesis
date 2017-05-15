@@ -1,0 +1,6 @@
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/pages/longList/longList.component.js
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/app.routing.js
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/pages/cameraRecord/cameraRecord.component.js
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/pages/hardware/hardware.component.js
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/pages/contacts/contacts.component.js
+/Users/exjobb/Documents/Exjobb/angular/AngularExjobb/platforms/android/src/main/assets/app/native-modules/phone-listener/index.js

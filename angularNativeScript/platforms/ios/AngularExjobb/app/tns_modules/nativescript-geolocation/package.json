@@ -1,0 +1,20 @@
+{
+    "name": "nativescript-geolocation",
+    "version": "0.0.19",
+    "description": "Provides API for getting and monitoring location for NativeScript app.",
+    "main": "nativescript-geolocation",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NativeScript/nativescript-geolocation.git"
+    },
+    "nativescript": {
+        "platforms": {
+            "android": "2.4.0",
+            "ios": "2.4.0"
+        }
+    },
+    "keywords": [
+        "NativeScript", "location", "geolocation"
+    ],
+    "author": "Nedyalko Nikolov <nedyalko.nikolov@progress.com>"
+}

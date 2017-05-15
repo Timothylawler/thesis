@@ -1,0 +1,14 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+.dark-actionbar{
+	background-color: #777;
+}
+
+
+.small-spacing{
+	margin: 4;
+}
+
+.medium-spacing{
+	margin: 8;
+}

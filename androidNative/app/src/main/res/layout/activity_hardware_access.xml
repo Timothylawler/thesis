@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exjobb.exjobb.Hardware_access"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gps data: "/>
+            <TextView
+                android:id="@+id/gpsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Waiting for gps"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network information: "/>
+            <TextView
+                android:id="@+id/networkInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone state: "/>
+            <TextView
+                android:id="@+id/phoneStateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/A"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrier: "/>
+            <TextView
+                android:id="@+id/carrierTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/A"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text message: "/>
+            <TextView
+                android:id="@+id/phoneSmsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/A"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/longListBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long list"/>
+            <Button
+                android:id="@+id/contactsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cameraVideoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Camera"/>
+            <Button
+                android:id="@+id/cameraPhotoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Camera"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/contactFab"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_launcher"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cameraFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/recordFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    -->
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<ActionBar title="Long List" class="dark-actionbar">
+  <ActionItem text="Add item" (tap)="addItem()" android.systemIcon="ic_menu_add" 
+	ios.systemIcon="9" ios.position="right"></ActionItem>
+</ActionBar>
+
+<ListView #longListTemplate  [items]="longListList" class="small-spacing">
+	<ng-template let-item="item" let-i="index" >
+		<GridLayout [id]="i" columns="*, auto" class="">
+			
+			<GridLayout col="0" rows="auto, *">
+				<Label row="0" [text]="item.firstName" class="small-spacing"></Label>
+				<Label row="1" [text]="item.lastName" class="small-spacing"></Label>
+			</GridLayout>
+
+			<GridLayout col="1" columns="auto, *"> 
+				<button col="0" text="Edit" class="small-spacing" (tap)="editItem(i)"></button>
+				<button col="1" text="Delete" class="small-spacing" (tap)="deleteItem(i)"></button>
+			</GridLayout>
+		</GridLayout>
+	</ng-template>
+</ListView>

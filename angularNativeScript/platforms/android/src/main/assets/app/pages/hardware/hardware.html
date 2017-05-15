@@ -1,0 +1,40 @@
+<ActionBar title="Hardware" class="dark-actionbar"></ActionBar>
+
+<GridLayout rows="auto,auto,auto,auto,auto,auto,auto" class="small-spacing">
+	<!-- GPS -->
+	<GridLayout row="0" columns="auto, auto" class="small-spacing">
+		<Label text="GPS: " col="0"></Label>
+		<Label [text]="gpsData" col="1"></Label>
+	</GridLayout>
+	<!-- Network information -->
+	<GridLayout row="1" columns="auto, auto" class="small-spacing">
+		<Label text="Network: " col="0"></Label>
+		<Label [text]="networkInformation" col="1"></Label>
+	</GridLayout>
+	<!-- Call state information -->
+	<GridLayout row="2" columns="auto, auto" class="small-spacing">
+		<Label text="Call state: " col="0"></Label>
+		<Label [text]="callState" col="1"></Label>
+	</GridLayout>
+	<!-- carrier Information -->
+	<GridLayout row="3" columns="auto, auto" class="small-spacing">
+		<Label text="Carrier: " col="0"></Label>
+		<Label [text]="carrierInformation.name + ', ' + carrierInformation.countryCode" col="1"></Label>
+	</GridLayout>
+
+	<!-- Text message -->
+	<GridLayout row="4" columns="auto, auto" class="small-spacing">
+		<Label text="Text message: " col="0"></Label>
+		<Label [text]="textMessage" col="1"></Label>
+	</GridLayout>
+	<!-- LongList and contacts-->
+	<GridLayout row="5" columns="auto, auto" class="small-spacing">
+		<button col="0" (tap)="longListBtnPressed()" text="Long list"></button>
+		<button col="1" (tap)="contactBtnPressed()" text="Contacts"></button>
+	</GridLayout>
+	<!-- Video camera and camera -->
+	<GridLayout row="6" columns="auto, auto" class="small-spacing">
+		<button col="0" (tap)="videoCameraBtnPressed()" text="Video camera"></button>
+		<button col="1" (tap)="cameraBtnPressed()" text="Camera"></button>
+	</GridLayout>
+</GridLayout>

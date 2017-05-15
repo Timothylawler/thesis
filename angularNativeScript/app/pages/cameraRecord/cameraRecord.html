@@ -1,0 +1,9 @@
+<ActionBar title="Record" class="dark-actionbar"></ActionBar>
+
+
+<FlexboxLayout flexDirection="column" justifyContent="flex-end">
+	<FlexboxLayout flexDirection="row" justifyContent="space-between">
+		<Button [text]="recordButtonText" (tap)="recordButtonClicked()"></Button>
+		<Button text="Close camera" (tap)="closeCameraButtonClicked()"></Button>
+	</FlexboxLayout>
+</FlexboxLayout>
