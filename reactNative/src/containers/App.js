@@ -39,7 +39,7 @@ import PickedContactReducer from '../reducers/pickedContactReducer';
 const scenes = Actions.create(
 	<Scene key="root">
 			<Scene key="HardwareScene" component={HardwareScene} title="Hardware" initial={true} />
-			<Scene key="LongListScene" component={FlatListList} title="LongList" onRight={() => {
+			<Scene key="LongListScene"  component={FlatListList} title="LongList" onRight={() => {
 					store.dispatch(lla.addItem({
 						firstName: "First name", lastName: "Last name"
 					}))

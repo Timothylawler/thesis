@@ -40,6 +40,7 @@ import { Actions } from 'react-native-router-flux';
 class HardwareScene extends Component {
 	
 	componentDidMount(){
+		console.log("Hardware mount");
 		this.getCarrierData();
 		this.getNetworkInfo();
 		this.listenForPhoneCall();

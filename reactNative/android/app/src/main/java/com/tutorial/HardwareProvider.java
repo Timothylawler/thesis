@@ -111,7 +111,8 @@ public class HardwareProvider extends ReactContextBaseJavaModule {
     @ReactMethod
     public void unmount(){
         context.unregisterReceiver(smsListener);
-        locationManager.removeUpdates(locationListener);
+        locationManager = null;
+        //locationManager.removeUpdates(locationListener);
 
 
         //  Null the objects to recycle them faster

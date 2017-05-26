@@ -38,6 +38,17 @@ export default class ListRow extends PureComponent {
 		});
 	}
 
+	animates(){
+		var wWidth = Dimensions.get('window').width;
+		return Animated.timing(
+			this.rightValue,
+			{
+				toValue: wWidth,
+				duration: 300
+			}
+		);
+	}
+
 	render() {
 		//console.log("ROW:", this.props);
 		const {data, index, editItem, deleteItem} = this.props;
@@ -62,21 +73,32 @@ export default class ListRow extends PureComponent {
 
 		return (
 			<Animated.View style={{right: this.rightValue, height: 75}}>
-				<Swipeable  rightButtons={rightButtons} key={data._id + index}>
+
 					<Text>
 						{data.firstName}
 					</Text>
 					<Text>
 						{data.lastName}
 					</Text>
-					<Button
-						title="Edit"
-						onPress={() =>
-							//start = performance.now();
-							this.props.editItem(index)
-						}
-					/>
-				</Swipeable>
+					<View
+						style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'flex-end'
+						}}
+					>
+						<Button
+							title="Edit"
+							onPress={() =>
+								//start = performance.now();
+								this.props.editItem(index)
+							}
+						/>
+						<Button
+							title="Delete"
+							onPress={() => this.animate()}/>
+					</View>
+
 			</Animated.View>
 		);
 	}
