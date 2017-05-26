@@ -16,8 +16,12 @@ export default function LongListReducer(state = initialState, action) {
 			]);
 			
 		case "REMOVEITEM": 
-			let tempDelete = state.filter((item) => item._id !== action.rowID);
-			return tempDelete;
+			//let tempDelete = state.filter((item) => item._id !== action.rowID);
+			//return tempDelete;
+			return[
+				...state.slice(0, action.rowID),
+				...state.slice(action.rowID + 1)
+			];
 			
 			
 

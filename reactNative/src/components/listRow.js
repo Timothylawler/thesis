@@ -34,19 +34,9 @@ export default class ListRow extends PureComponent {
 			}
 		).start(() => {
 			this.rightValue.setValue(0);
-			this.props.deleteItem(this.props.data._id);
+			//this.props.deleteItem(this.props.data._id);
+			this.props.deleteItem(this.props.index);
 		});
-	}
-
-	animates(){
-		var wWidth = Dimensions.get('window').width;
-		return Animated.timing(
-			this.rightValue,
-			{
-				toValue: wWidth,
-				duration: 300
-			}
-		);
 	}
 
 	render() {
